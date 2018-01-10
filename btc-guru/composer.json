@@ -1,0 +1,24 @@
+{
+    "name": "1234max/MultiVendorBitcoinMart",
+    "type": "project",
+    "description": "secure bitcoin market built on php",
+    "homepage": "https://github.com/1234max/MultiVendorBitcoinMart",
+    "authors": [
+        {
+            "name": "Max Knorr",
+            "homepage": "https://github.com/1234max",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/1234max/MultiVendorBitcoinMart/issues",
+        "source": "https://github.com/1234max/MultiVendorBitcoinMart"
+    },
+    "require": {
+        "php": ">=5.4.34",
+        "ircmaxell/password-compat": "dev-master",
+        "bitwasp/bitcoin-lib": "dev-master",
+        "ext-gmp": "*",
+        "mdanter/ecc": "*"
+    }
+}

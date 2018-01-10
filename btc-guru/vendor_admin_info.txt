@@ -1,0 +1,29 @@
+PHPMyAdmin: username for db: mvbm
+password: cVnjdbTUVDhEk1HB89vjJLVeMpwbrKJte86gHhNZuVFdy3xQLBP4    OR    the command below
+rpcuser=bitcoinrpc rpcpassword=
+Password: bitcoin-cli dumpprivkey mgsAj5s8qAmXLmzjbpXPB1yzzH4JjgmiWR
+
+bip32 extended public key (http://bip32.org/)
+lynch mob day of the rope
+BIP32 Extended Key: xprv9s21ZrQH143K3E7fCfnWqKWpzWedJeMQM7dXjYizyusLHHEL4GpqWZgHAxDm1DcQM5PJeGxi7Ure97nHecbf4VDeUcuRT9CQh7wEjWgc6UP
+Key Info
+Bitcoin Master Private Key
+Version: 0488ade4 (Bitcoin Mainnet private key)
+Depth: 0
+Parent Fingerprint: 00000000
+Child Index: 0
+Chain Code: 7557400307da10ad8c11ecc1e59d8e287537cfeb6fbc10d2a10120e42c28bad1
+Key: L48mq3AM3o2X3ttyC6RcdjGS6NAuxJPpLUGGuvrEToaD99HweUzc
+
+Derivation Path
+Account (k): 0
+Derived Private Key: xprv9vweB6LgtzcP3ypqGNJXSoQEMN1QH3T1QVwxxjW4FGEx94mDvNQECiZAUfzZq8vk7iFu3NB3s2j3jgwxCT3ZMrcqDvDnD8SBJhpNfU4CcVz
+Private Key (WIF): KwHUyTohXpdoD8d4izFGw9iZSPV6PZDvocsVAuA6KTxcrnU3RUjA
+Derived Public Key: xpub69vzabsajNAgGTuJNPqXowLxuPqtgWArmisZm7ufobmw1s6NTuiUkWseKyymGwMc3BPoJD5KpTYzRyxa4ZuvqDB1NWQd4cDrDp593MyBCwq
+Public Key (Hex): 03873221aa1c914d641a365430e5dfb5639d2328dc09f3427838b8236037b8d3c7
+Address: 1AUJ9GiYp8ZRZWVZNoVW38S8DNUUV9pe6j
+Address QR Code
+
+php /var/www/html/MultiVendorBitcoinMart/app/cli.php set-admin xpub69vzabsajNAgGTuJNPqXowLxuPqtgWArmisZm7ufobmw1s6NTuiUkWseKyymGwMc3BPoJD5KpTYzRyxa4ZuvqDB1NWQd4cDrDp593MyBCwq 17Jn1VYpwknwjuVxLMYvqc8iHJ6QsP8xDo
+
+xpub69vzabsajNAgGTuJNPqXowLxuPqtgWArmisZm7ufobmw1s6NTuiUkWseKyymGwMc3BPoJD5KpTYzRyxa4ZuvqDB1NWQd4cDrDp593MyBCwq

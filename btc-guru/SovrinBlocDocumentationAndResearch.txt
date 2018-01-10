@@ -1,0 +1,76 @@
+Documentation & Report: Sovrin Bloc - The World's Largest MultiVendor Bitcoin Marketplace for Freelancing Services, Outsourcing, and Physical and Digital Products
+Sovrin Bloc provides a channel to connect Service Providers and Vendors with Entrepreneurs, Business Owners, Project Managers, and Consumers.
+
+Brilliance has no location, government, borders, or currency-type. Sovron Bloc connects your business with the top skillful individuals from around globe with the world's fastest marketplace, from sign-up to receiving your service.
+
+Bitcoin is the first decentralized currency now valued at over $100B USD and growing every day. The currency is currently used as a means of investment, and is operated very similarly as a Public Company.
+
+Anyone who owns Bitcoin is gaining interest and value at an incredible rate at which it seems it may continue to rise for a very long time, due to a hard cap that is not to be reached for well over 100 years.
+
+To do business in bitcoin is to ensure that you are able to get a piece of investment capital and international currency at reasonable rates, without having to use a third party currency exchange, pay them a large amount of interest to buy and to sell.
+
+The common way Bitcoin is used is that a user goes on the site, buys bitcoin on the site for a price, leaves it on the site, then sells it on the site for a price. They discourage you from selling or sending your bitcoin off of their marketplaces by charging you a percentage of your BTC, or by limiting the amount you can sell at once.
+
+The best way to use Bitcoin would be as it was originally intended: Store it on your own personal wallet and send and receive to/from other parties in exchange for goods and services.
+
+For those who were doing business with bitcoin and have saved some, just as you would work for USD and save some, if they had 100 Bitcoin saved from 8 years ago (worth about $30,000), that would now equal about $750,000 if they had kept it on BTC and not in USD.
+
+Therefore, it is only logical, so long as there are places to buy and sell with bitcoin, to use Bitcoin as a currency as the price rises dramatically, therefore watching your profits grow to incredible amounts.
+
+Certain marketplaces are starting to catch on. NewEgg, Expedia, and stores around the world are now starting to accept Bitcoin because they see the vision.
+
+Sovrin Bloc offers that service to you; easily and immediately. Take advantage.
+
+Stores are now quickly stating to catch on though --
+
+Service Providers / Vendors
+THe world's fastest and safest methods for account and profile creation, verification of identity, payment sending and receiving.
+There are new technologies that exist that have not been implemented and utilized the way they should have -- until now.
+
+The standard process for selling over the internet goes as follows:
+  1. Create an account
+  2. Verify your identity through means of Government Issued Identification (1 - 10 days)
+  3. Connect a bank account to your profile as means of transferring funds or chargeback fees (1 - 10 days)
+  4. Create listings
+  5. Buyer finds Seller's listing and inquires to purchase
+  5. Seller Accepts bids and (Fee is charged to Seller for a transaction going through)
+  6. Contact buyer
+  7. Buyer submits Payment to the Marketplace (such as PeoplePerHour)
+  8. Service Provider does work and sends it to the buyer
+  9. The buyer verifies that the work has been completed
+  9a. If there is a dispute, since the Market actually has your money, they decide who is right and wrong and they then release, hold, or give back the money.
+  10. The Escrow is then released into the Seller's Market profile
+  11. The seller requests that the funds be transferred to their bank account (minimum balance normally required, fee normally required, 3 - 10 days normally, bank account required or paypal required)
+  12. After fees and time, Seller can finally pay rent.
+
+  Summary: Because of national and internation laws regarding currency, hosting an official escrow service online, and other factors, the process for creating a Seller or Vendor account on an online marketplace is long and drawn out.
+
+
+Using various disrupting technologies, Sovrin Bloc obliterates the tedious and unnecessary work that needs to be done to become a seller.
+1. Create an account
+2. Identification unnecessary due to no actual currency exchange, but means of identification verification is possible and encouraged through Sov Bloc. It actually helps establish your reputation for any crypto-currency or anonymous for you to identify your identification because Sovrin Bloc can then sign your GPG identity and you can establish your line of identity as even stronger than receiving a Government issued license.
+3. No bank account connection necessary
+4. Create listings  - Use our tools to scrape your listings on Amazon and other services to provide a complete vendor listing almost instantly
+5. Seller accepts bid and fee is charged for listing success
+6. Contact buyer
+7. Buyer submits Payment to Multi-Sig Bitcoin as provided by Sovrin Bloc, signed by all three parties (Buyer, Seller, and Market). Therefore there is no official Escrow service provided by Sovrin Bloc, yet the safest way possible to transferring funds is now being utilized. There is no waiting period for funds to clear, there is no limit on the size of the purchases, there is no limit to the amount of purchases you can make in a day. The limits imposed on the average consumer using standardized payment methods to keep you from spending your money are no longer imposed. You have complete and total, sovereign control over your finances, with a safer and faster way of handling money (over 80,000 parties protecting your transactions), to ever exist. Sovrin Bloc does not have control of your funds, we cannot cease your money, the government cannot cease your money.
+Talent has no nationality, no country, no boundaries. Why should your business act local in a global world?
+8. Work Completed and sent to Buyer
+9. Buyer Signs Off
+9a. Disputes are handled in the safety of Sovrin Bloc. We thoroughly investigate every matter via various criteria. We then either sign off on the payment or the transaction is sent back to the buyer. Either way, the money is in official escrow at that point, there is no means of bias because the coins exist and can be sent only when 2 of 3 parties sign off on the multi-sig transaction. This is one of the safest methods in the world of transferring funds.
+Sovrin Bloc is programmed in a custom Model Viewer, and Controller framework that maps out all accessible actions to limit the possibility of vulnerabilities, thereby increasing security and  providing a tight structure, system, and framework to work within.
+10. The payment is immediately received by the correct party and instantly accessible to them. No wait.
+
+1. public/index.php - Initiation of the Application is done from index.php -- basically just requires files and calls the run function on the App class
+2. ../app/lib/app.php - Holds a map of all publicly accessible controller & actions ($routes).
+      On each request, it
+      a) opens the database connection
+      b.) dispatches the request to the responsible controller (with fallback to default controller and error pages)
+      * @var array map of all publicly accessible controller actions,
+      *            in the form ['controllername' => ['availableaction1' => ['REQUEST_METHOD1, 'POST'], 'availableaction2' => ['GET', 'POST']], 'controller2' => [], ...].
+      *            is used to lookup the responsible controller via controller = $_GET['c'], action = $_GET['a']
+      */
+
+      1. run() calls dispatchToController(), which looks for your $_GET variables and then proceeds from there.
+      2. dispatchToController calls opens the controller you have in your $_GET or $_POST and then also executes the action you have stored.
+         It does this by finding which variable is stored in GET, literally requires()$_GET . Controller) and then calls BlaController->$_GET[action] (a function)
